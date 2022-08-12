@@ -62,27 +62,27 @@ const Fetcher = async (url: string, method: string, data?: any) => {
 /**
  * Callback function to Fetcher, passing in the url, and supplying the method itself.
  * @param url The url to request.
- * @returns Returns JSON-parsed data in the response.
+ * @returns Returns a promise that resolves with JSON-parsed data in the response.
  */
 export const GET = (url: string) => Fetcher(url, "GET");
 /**
  * Callback function to Fetcher, passing in the url and data, and supplying the method itself.
  * @param url The url to request.
  * @param data The data to be sent.
- * @returns Returns JSON-parsed data in the response.
+ * @returns Returns a promise that resolves with JSON-parsed data in the response.
  */
 export const POST = (url: string, data: any) => Fetcher(url, "POST", data);
 /**
  * Callback function to Fetcher, passing in the url and data, and supplying the method itself.
  * @param url The url to request.
  * @param data The data to be sent.
- * @returns Returns JSON-parsed data in the response.
+ * @returns Returns a promise that resolves with JSON-parsed data in the response.
  */
 export const PUT = (url: string, data: any) => Fetcher(url, "PUT", data);
 /**
  * Callback function to Fetcher, passing in the url, and supplying the method itself.
  * @param url The url to request.
- * @returns Returns JSON-parsed data in the response.
+ * @returns Returns a promise that resolves with JSON-parsed data in the response.
  */
 export const DELETE = (url: string) => Fetcher(url, "DELETE");
 

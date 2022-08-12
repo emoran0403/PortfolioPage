@@ -1,0 +1,20 @@
+To fix cross-origin-requests issues in a Node JS application:
+
+npm i cors
+And simply add the lines below to the app.js
+
+let cors = require('cors')
+app.use(cors())
+
+* double check the CORS thing to enable fetching project sites upon loading up the portfolio sites
+
+* take some screenshots - add them to assets
+* add asset URI to ProjectInfo/index for each project
+* use this URI to display the image in the main page
+* get assets for tech stack things
+
+* do i want projects to be the landing page?
+
+* endpoint for a resume?
+
+* page view for an resume?

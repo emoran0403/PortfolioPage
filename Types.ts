@@ -18,3 +18,12 @@ export interface IHeaderObject {
 export interface ReqUser extends Request {
   user?: { username?: string; email?: string; password?: string };
 }
+
+export interface ProjectDetails {
+  title: string;
+  details: string;
+  techStack: string[];
+  imgURI: string;
+  pageURL: string;
+  appURL: string;
+}
