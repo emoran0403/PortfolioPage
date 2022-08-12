@@ -1,64 +1,66 @@
-import * as React from 'react';
-import { useState, useEffect } from 'react';
+import * as React from "react";
+import { useState, useEffect } from "react";
+import Fetcher from "./ClientUtils/Fetcher";
 
-/* HOOK REACT EXAMPLE */
 const App = (props: AppProps) => {
-	const [greeting, setGreeting] = useState<string>('');
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // make fetches to projects here so they will be immediately available when accessed
+  //     Fetcher.GET("https://ejmdev-idlescape.herokuapp.com/game")
+  //       .then(() => {
+  //         // return Fetcher.GET();
+  //       })
+  //       .then(() => {
+  //         // return Fetcher.GET();
+  //       })
+  //       .catch((err) => {
+  //         console.log(`There was an error fetching the projects`);
+  //         console.log(err);
+  //       });
+  //   }, 10000);
 
-	useEffect(() => {
-		async function getGreeting() {
-			try {
-				const res = await fetch('/api/hello');
-				const greeting = await res.json();
-				setGreeting(greeting);
-			} catch (error) {
-				console.log(error);
-			}
-		}
-		getGreeting();
-	}, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-	return (
-		<main className="container my-5">
-			<h1 className="text-primary text-center">Hello {greeting}!</h1>
-		</main>
-	);
+  return (
+    <main className="container my-5">
+      <h1 className="text-primary text-center">Hello</h1>
+    </main>
+  );
 };
 
 interface AppProps {}
 
-/* CLASS REACT EXAMPLE */
-// class App extends React.Component<IAppProps, IAppState> {
-// 	constructor(props: IAppProps) {
-// 		super(props);
-// 		this.state = {
-// 			name: null
-// 		};
-// 	}
-
-// 	async componentDidMount() {
-// 		try {
-// 			let r = await fetch('/api/hello');
-// 			let name = await r.json();
-// 			this.setState({ name });
-// 		} catch (error) {
-// 			console.log(error);
-// 		}
-// 	}
-
-// 	render() {
-// 		return (
-// 			<main className="container my-5">
-// 				<h1 className="text-primary text-center">Hello {this.state.name}!</h1>
-// 			</main>
-// 		);
-// 	}
-// }
-
-// export interface IAppProps {}
-
-// export interface IAppState {
-// 	name: string;
-// }
-
 export default App;
+
+// useEffect(() => {
+//   const interval = setInterval(() => {
+//     // make fetches to projects here so they will be immediately available when accessed
+//     Fetcher.GET("https://ejmdev-idlescape.herokuapp.com/game").catch((err) => {
+//       console.log(`There was an error fetching "https://ejmdev-idlescape.herokuapp.com/game"`);
+//       console.log(err);
+//     });
+//     Fetcher.GET("projecturlhere").catch((err) => {
+//       console.log(`There was an error fetching "projecturlhere"`);
+//       console.log(err);
+//     });
+//     Fetcher.GET("projecturlhere").catch((err) => {
+//       console.log(`There was an error fetching "projecturlhere"`);
+//       console.log(err);
+//     });
+//     Fetcher.GET("projecturlhere").catch((err) => {
+//       console.log(`There was an error fetching "projecturlhere"`);
+//       console.log(err);
+//     });
+//     Fetcher.GET("projecturlhere").catch((err) => {
+//       console.log(`There was an error fetching "projecturlhere"`);
+//       console.log(err);
+//     });
+//     Fetcher.GET("projecturlhere").catch((err) => {
+//       console.log(`There was an error fetching "projecturlhere"`);
+//       console.log(err);
+//     });
+//   }, 10000);
+
+//   return () => clearInterval(interval);
+// }, []);
