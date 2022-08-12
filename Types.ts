@@ -1,3 +1,11 @@
+export interface MainPageProps {}
+export interface IdleGameProps {}
+export interface StudioGhibliProps {}
+export interface TicTacToeProps {}
+export interface JustMyTypeProps {}
+export interface GundamPlanetProps {}
+export interface BlogsLabProps {}
+
 export interface IFetchOptions {
   headers: IHeaderObject;
   body?: string;
