@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import * as Types from "../../../../Types";
+import { BlogsLabDetails } from "../../../ProjectInfo";
 
 const BlogsLab = (props: Types.BlogsLabProps) => {
   const nav = useNavigate();
@@ -41,8 +42,11 @@ const BlogsLab = (props: Types.BlogsLabProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Tech Stack</h3>
-              <p>text here</p>
+              {BlogsLabDetails.techStack.sort().map((tech) => (
+                <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>

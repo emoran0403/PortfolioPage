@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as Types from "../../../../Types";
 import { useNavigate } from "react-router-dom";
+import { JustMyTypeDetails } from "../../../ProjectInfo";
 const JustMyType = (props: Types.JustMyTypeProps) => {
   const nav = useNavigate();
   return (
@@ -39,8 +40,11 @@ const JustMyType = (props: Types.JustMyTypeProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Tech Stack</h3>
-              <p>text here</p>
+              {JustMyTypeDetails.techStack.sort().map((tech) => (
+                <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as Types from "../../../../Types";
 import { useNavigate } from "react-router-dom";
+import { GundamPlanetDetails } from "../../../ProjectInfo";
 
 const GundamPlanet = (props: Types.GundamPlanetProps) => {
   const nav = useNavigate();
@@ -40,8 +41,11 @@ const GundamPlanet = (props: Types.GundamPlanetProps) => {
             <hr></hr>
 
             <div className="card-body">
-              <h3>Tech Stack</h3>
-              <p>text here</p>
+              {GundamPlanetDetails.techStack.sort().map((tech) => (
+                <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>
