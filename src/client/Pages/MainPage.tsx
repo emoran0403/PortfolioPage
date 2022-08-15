@@ -99,9 +99,10 @@ const MainPage = (props: Types.MainPageProps) => {
   };
   return (
     <div>
-      <div>This is Main Page</div>
-      {projectsJSX()}
-      {labsJSX()}
+      <div className="my-4">
+        {projectsJSX()}
+        {labsJSX()}
+      </div>
     </div>
   );
 };
