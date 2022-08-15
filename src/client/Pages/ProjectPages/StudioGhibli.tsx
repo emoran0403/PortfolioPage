@@ -25,18 +25,37 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
           <div className="card">
             <div className="card-body">
               <h3>Overview</h3>
-              <p>text here</p>
+              <p>
+                This was one of the first labs assigned after being introduced to React, and focused on fetching data from an external API. Landing on the home
+                page triggers a fetch to the people and films endpoints. These return a big list of people and filmsm which I hold in the App component, and
+                pass down as props to the individual components to avoid extra fetches on those components.
+              </p>
             </div>
             <hr></hr>
             <div className="card-body">
               <h3>Features</h3>
-              <p>text here</p>
+              <p>
+                Fetches data from the{" "}
+                <span>
+                  <a target="_blank" href="https://ghibliapi.herokuapp.com/#">
+                    Studio Ghibli API
+                  </a>
+                </span>{" "}
+                and displays the information as bootstrap cards.
+              </p>
+
+              <p>This lab was before react-router-dom was taught, so I assigned each 'page' a view number, and conditionally displayed each view</p>
             </div>
             <hr></hr>
 
             <div className="card-body">
               <h3>Challenges</h3>
-              <p>text here</p>
+              <p>
+                The most challenging part of this lab was implementing the characters section in the films page. The endpoint for a particular film serves up an
+                endpoint for each character, and not the individual character's name. Instead of making an unknown number of fetches to those endpoints for just
+                a name, I passed in the previously fetched full list of characters as props to the component, and made use of array manipulation to create a
+                list of the character names for an individual movie.
+              </p>
             </div>
             <hr></hr>
 

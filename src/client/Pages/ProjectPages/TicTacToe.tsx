@@ -25,7 +25,10 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
           <div className="card">
             <div className="card-body">
               <h3>Overview</h3>
-              <p>text here</p>
+              <p>
+                Your basic Tic Tac Toe, Noughts and Crosses, or X's and O's game. Clicking in a square places the symbol for the current player. Every turn the
+                game checks for a winner, or when the board is full, displays Draw! When the game is over, there is an option to reset the board and play again.
+              </p>
             </div>
             <hr></hr>
             <div className="card-body">
@@ -36,7 +39,12 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
 
             <div className="card-body">
               <h3>Challenges</h3>
-              <p>text here</p>
+              <p>
+                This was one of the first labs in the course that brought together the concepts taught in HTML, CSS, and JS, with a healthy dose of "If you
+                don't know it, google it". One of the small things not explicitly covered (and the most difficult part about this lab) was adding the defer
+                attribute to the script tag in the html file to ensure the DOM tree loaded before the script attempted to add the event listeners. Turns out I
+                could have just put the script tag at the end of the body as well.
+              </p>
             </div>
             <hr></hr>
 
