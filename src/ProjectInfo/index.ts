@@ -5,7 +5,7 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   details: `Blogs Lab is a Full Stack application from the Covalence bootcamp.  
   Students are tasked with developing every aspect from the back-end to the front-end, 
   the MySQL database, the API endpoints, and the server to handle the endpoints.`,
-  techStack: [`MySQL`, `Express`, `React`, `NodeJS`],
+  techStack: [`MySQL`, `Express`, `React`, `Typescript`, `NodeJS`],
   imgURI: "",
   pageURL: `/blogslab`,
   appURL: ``,
@@ -18,7 +18,7 @@ export const GundamPlanetDetails = {
   details: `Gundam Planet Scraper is a personal project I worked on after the bootcamp. 
   Using data from Google Sheets, the server launches a headless browser via Selenium to scrape data from select websites, 
   then writes that data back to a Google Sheet.`,
-  techStack: [`Google Sheets API`, `Express`, `React`, `NodeJS`, `Selenium`],
+  techStack: [`Google Sheets API`, `Express`, `React`, `Typescript`, `NodeJS`, `Selenium`],
   imgURI: "",
   pageURL: `/gundamplanet`,
   appURL: ``,
@@ -29,7 +29,7 @@ export const GundamPlanetDetails = {
 export const IdleGameDetails = {
   title: "Idle Scape",
   details: `Idle Scape is a Full-Stack application and my final project for the Covalence bootcamp.`,
-  techStack: [`MongoDB`, `Express`, `React`, `Redux`, `NodeJS`],
+  techStack: [`MongoDB`, `Express`, `React`, `Redux`, `Typescript`, `NodeJS`],
   imgURI: "",
   pageURL: `/idlegame`,
   appURL: `https://ejmdev-idlescape.herokuapp.com/`,
@@ -51,7 +51,7 @@ export const StudioGhibliDetails = {
   title: "Studio Ghibli Lab",
   details: `The Studio Ghibli Lab is one of the first labs in the React section of the Covalence bootcamp.
     Students are tasked with making fetch requests to an API, then displaying the data.`,
-  techStack: [`Express`, `React`, `NodeJS`],
+  techStack: [`JavaScript`, `Express`, `React`, `NodeJS`],
   imgURI: "",
   pageURL: `/studioghibli`,
   appURL: `https://eric-studio-ghibli-api.herokuapp.com/`,
