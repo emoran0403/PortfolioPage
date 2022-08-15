@@ -16,7 +16,14 @@ const MainPage = (props: Types.MainPageProps) => {
           {ProjectArray.map((project) => {
             return project.personalProject ? (
               <div key={`project-${project.title}`} className="card col-6 m-5 ">
-                <img src="..." className="card-img-top" alt="..." />
+                <img
+                  src={`/Assets/ProjectCardScreenCaps/${project.title}.PNG`}
+                  height={750}
+                  width={1500}
+                  className="card-img-top"
+                  alt={`${project.title}`}
+                  title={`${project.title}`}
+                />
                 <div className="card-body">
                   <h3 className="card-title text-center">{project.title}</h3>
                   <p className="card-text">{project.details}</p>
@@ -61,7 +68,14 @@ const MainPage = (props: Types.MainPageProps) => {
           {ProjectArray.map((project) => {
             return project.lab ? (
               <div key={`project-${project.title}`} className="card col-6 m-5 ">
-                <img src="..." className="card-img-top" alt="..." />
+                <img
+                  src={`/Assets/ProjectCardScreenCaps/${project.title}.PNG`}
+                  height={750}
+                  width={1500}
+                  className="card-img-top"
+                  alt={`${project.title}`}
+                  title={`${project.title}`}
+                />
                 <div className="card-body">
                   <h3 className="card-title text-center">{project.title}</h3>
                   <p className="card-text">{project.details}</p>

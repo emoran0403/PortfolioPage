@@ -12,7 +12,6 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   lab: true,
   personalProject: false,
 };
-
 export const GundamPlanetDetails = {
   title: "Gundam Planet Scraper",
   details: `Gundam Planet Scraper is a personal project I worked on after the bootcamp. 
@@ -25,7 +24,6 @@ export const GundamPlanetDetails = {
   lab: false,
   personalProject: true,
 };
-
 export const IdleGameDetails = {
   title: "Idle Scape",
   details: `Idle Scape is a Full-Stack application and my final project for the Covalence bootcamp.`,
