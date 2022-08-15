@@ -26,4 +26,6 @@ export interface ProjectDetails {
   imgURI: string;
   pageURL: string;
   appURL: string;
+  lab: boolean;
+  personalProject: boolean;
 }
