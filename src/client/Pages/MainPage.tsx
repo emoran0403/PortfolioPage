@@ -16,6 +16,8 @@ const MainPage = (props: Types.MainPageProps) => {
           {ProjectArray.map((project) => {
             return project.personalProject ? (
               <div key={`project-${project.title}`} className="card col-6 m-5 ">
+                <h3 className="card-title my-2 text-center">{project.title}</h3>
+                <hr></hr>
                 <img
                   src={`/Assets/ProjectCardScreenCaps/${project.title}.PNG`}
                   height={750}
@@ -24,17 +26,22 @@ const MainPage = (props: Types.MainPageProps) => {
                   alt={`${project.title}`}
                   title={`${project.title}`}
                 />
+                <hr></hr>
+
                 <div className="card-body">
-                  <h3 className="card-title text-center">{project.title}</h3>
-                  <p className="card-text">{project.details}</p>
+                  <p className="card-text text-center">{project.details}</p>
                 </div>
-                <div className="card-body">
+                <hr></hr>
+
+                <div className="card-body text-center">
                   {project.techStack.sort().map((tech) => (
                     <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
                       {tech}
                     </span>
                   ))}
                 </div>
+                <hr></hr>
+
                 <div className="card-body">
                   <div className="d-flex justify-content-evenly">
                     <button
@@ -68,6 +75,8 @@ const MainPage = (props: Types.MainPageProps) => {
           {ProjectArray.map((project) => {
             return project.lab ? (
               <div key={`project-${project.title}`} className="card col-6 m-5 ">
+                <h3 className="card-title text-center my-2">{project.title}</h3>
+                <hr></hr>
                 <img
                   src={`/Assets/ProjectCardScreenCaps/${project.title}.PNG`}
                   height={750}
@@ -76,17 +85,19 @@ const MainPage = (props: Types.MainPageProps) => {
                   alt={`${project.title}`}
                   title={`${project.title}`}
                 />
+                <hr></hr>
                 <div className="card-body">
-                  <h3 className="card-title text-center">{project.title}</h3>
-                  <p className="card-text">{project.details}</p>
+                  <p className="card-text text-center">{project.details}</p>
                 </div>
-                <div className="card-body">
+                <hr></hr>
+                <div className="card-body text-center">
                   {project.techStack.sort().map((tech) => (
                     <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
                       {tech}
                     </span>
                   ))}
                 </div>
+                <hr></hr>
                 <div className="card-body">
                   <div className="d-flex justify-content-evenly">
                     <button
