@@ -32,15 +32,17 @@ const App = (props: AppProps) => {
   // }, []);
 
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/idlegame" element={<IdleGame />} />
-      <Route path="/studioghibli" element={<StudioGhibli />} />
-      <Route path="/tictactoe" element={<TicTacToe />} />
-      <Route path="/justmytype" element={<JustMyType />} />
-      <Route path="/gundamplanet" element={<GundamPlanet />} />
-      <Route path="/blogslab" element={<BlogsLab />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/idlegame" element={<IdleGame />} />
+        <Route path="/studioghibli" element={<StudioGhibli />} />
+        <Route path="/tictactoe" element={<TicTacToe />} />
+        <Route path="/justmytype" element={<JustMyType />} />
+        <Route path="/gundamplanet" element={<GundamPlanet />} />
+        <Route path="/blogslab" element={<BlogsLab />} />
+      </Routes>
+    </div>
   );
 };
 

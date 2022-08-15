@@ -15,29 +15,33 @@ const MainPage = (props: Types.MainPageProps) => {
         <div className="d-flex flex-wrap justify-content-center">
           {ProjectArray.map((project) => {
             return project.personalProject ? (
-              <div className="card col-3 m-5 ">
+              <div key={`project-${project.title}`} className="card col-6 m-5 ">
                 <img src="..." className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
+                  <h3 className="card-title text-center">{project.title}</h3>
                   <p className="card-text">{project.details}</p>
                 </div>
-                <ul className="list-group list-group-flush">
-                  {project.techStack.sort().map((tech) => (
-                    <li className="list-group-item">{tech}</li>
-                  ))}
-                </ul>
                 <div className="card-body">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                      nav(`${project.pageURL}`);
-                    }}
-                  >
-                    Details
-                  </button>
-                  <a className="btn btn-primary" href={project.appURL} target="_blank">
-                    Project Site
-                  </a>
+                  {project.techStack.sort().map((tech) => (
+                    <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="card-body">
+                  <div className="d-flex justify-content-evenly">
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => {
+                        nav(`${project.pageURL}`);
+                      }}
+                    >
+                      Details
+                    </button>
+                    <a className="btn btn-primary" href={project.appURL} target="_blank">
+                      Project Site
+                    </a>
+                  </div>
                 </div>
               </div>
             ) : (
@@ -56,29 +60,33 @@ const MainPage = (props: Types.MainPageProps) => {
         <div className="d-flex flex-wrap justify-content-center">
           {ProjectArray.map((project) => {
             return project.lab ? (
-              <div className="card col-3 m-5 ">
+              <div key={`project-${project.title}`} className="card col-6 m-5 ">
                 <img src="..." className="card-img-top" alt="..." />
                 <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
+                  <h3 className="card-title text-center">{project.title}</h3>
                   <p className="card-text">{project.details}</p>
                 </div>
-                <ul className="list-group list-group-flush">
-                  {project.techStack.sort().map((tech) => (
-                    <li className="list-group-item">{tech}</li>
-                  ))}
-                </ul>
                 <div className="card-body">
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                      nav(`${project.pageURL}`);
-                    }}
-                  >
-                    Details
-                  </button>
-                  <a className="btn btn-primary" href={project.appURL} target="_blank">
-                    Project Site
-                  </a>
+                  {project.techStack.sort().map((tech) => (
+                    <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="card-body">
+                  <div className="d-flex justify-content-evenly">
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => {
+                        nav(`${project.pageURL}`);
+                      }}
+                    >
+                      Details
+                    </button>
+                    <a className="btn btn-primary" href={project.appURL} target="_blank">
+                      Project Site
+                    </a>
+                  </div>
                 </div>
               </div>
             ) : (

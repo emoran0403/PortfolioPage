@@ -18,3 +18,5 @@ app.use(cors())
 * endpoint for a resume?
 
 * page view for an resume?
+
+* make main page single column
