@@ -5,21 +5,31 @@ import { StudioGhibliDetails } from "../../../ProjectInfo";
 
 const StudioGhibli = (props: Types.StudioGhibliProps) => {
   const nav = useNavigate();
-  return (
-    <div className="my-4">
-      <h1 className="text-center">Studio Ghibli Lab</h1>
-      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+  const buttonJSX = () => {
+    return (
       <div className="d-flex justify-content-center">
         <button
-          className="btn btn-primary btn-sm my-2"
+          className="btn btn-primary btn-sm m-2"
           onClick={() => {
             nav(`/`);
           }}
         >
           Main page
         </button>
+        <a className="btn btn-primary btn-sm m-2" href={StudioGhibliDetails.gitHubURL} target="_blank">
+          Git Hub Repo
+        </a>
+        <a className="btn btn-primary btn-sm m-2" href={StudioGhibliDetails.appURL} target="_blank">
+          Project Site
+        </a>
       </div>
-
+    );
+  };
+  return (
+    <div className="my-4">
+      <h1 className="text-center">Studio Ghibli Lab</h1>
+      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+      {buttonJSX()}
       <div className="d-flex justify-content-center">
         <div className="col-6">
           <div className="card">
@@ -27,8 +37,8 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
               <h3>Overview</h3>
               <p>
                 This was one of the first labs assigned after being introduced to React, and focused on fetching data from an external API. Landing on the home
-                page triggers a fetch to the people and films endpoints. These return a big list of people and filmsm which I hold in the App component, and
-                pass down as props to the individual components to avoid extra fetches on those components.
+                page triggers a fetch to the people, films, and locations endpoints. These return arrays of data, which I hold in the App component, and pass
+                down as props to the individual components to avoid extra fetches on those components.
               </p>
             </div>
             <hr></hr>
@@ -44,17 +54,26 @@ const StudioGhibli = (props: Types.StudioGhibliProps) => {
                 and displays the information as bootstrap cards.
               </p>
 
-              <p>This lab was before react-router-dom was taught, so I assigned each 'page' a view number, and conditionally displayed each view</p>
+              <p>
+                This lab is built with{" "}
+                <span>
+                  <a target="_blank" href="https://create-react-app.dev/">
+                    create-react-app
+                  </a>
+                </span>{" "}
+                and displays data from three endpoints.
+              </p>
             </div>
             <hr></hr>
 
             <div className="card-body">
               <h3>Challenges</h3>
               <p>
-                The most challenging part of this lab was implementing the characters section in the films page. The endpoint for a particular film serves up an
-                endpoint for each character, and not the individual character's name. Instead of making an unknown number of fetches to those endpoints for just
-                a name, I passed in the previously fetched full list of characters as props to the component, and made use of array manipulation to create a
-                list of the character names for an individual movie.
+                The most challenging part of this lab was creating the relationships between the data given by the API endpoints. For example, the data for a
+                particular film only lists character endpoints, not the specific character names. I wanted to display that additional information without
+                incurring more fetch requests. I accomplished this by iterating through the list of movies, and for each movie, to then iterate through the list
+                of characters. If the character ID provided by the movie matched that of the current character, I pushed the character name into an array. Then
+                I mapped over the array displaying the character list.
               </p>
             </div>
             <hr></hr>

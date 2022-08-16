@@ -5,20 +5,31 @@ import { GundamPlanetDetails } from "../../../ProjectInfo";
 
 const GundamPlanet = (props: Types.GundamPlanetProps) => {
   const nav = useNavigate();
-  return (
-    <div className="my-4">
-      <h1 className="text-center">Gundam Planet Scraper</h1>
-      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+  const buttonJSX = () => {
+    return (
       <div className="d-flex justify-content-center">
         <button
-          className="btn btn-primary btn-sm my-2"
+          className="btn btn-primary btn-sm m-2"
           onClick={() => {
             nav(`/`);
           }}
         >
           Main page
         </button>
+        <a className="btn btn-primary btn-sm m-2" href={GundamPlanetDetails.gitHubURL} target="_blank">
+          Git Hub Repo
+        </a>
+        <a className="btn btn-primary btn-sm m-2" href={GundamPlanetDetails.appURL} target="_blank">
+          Project Site
+        </a>
       </div>
+    );
+  };
+  return (
+    <div className="my-4">
+      <h1 className="text-center">Gundam Planet Scraper</h1>
+      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+      {buttonJSX()}
 
       <div className="d-flex justify-content-center">
         <div className="col-6">

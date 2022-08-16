@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Types from "../../../Types";
 import { ProjectArray } from "../../ProjectInfo";
 import { useNavigate } from "react-router-dom";
-import { SiMysql, SiExpress, SiMongodb, SiJavascript, SiSelenium, SiReact, SiNodedotjs, SiHtml5, SiCss3 } from "react-icons/si";
+// import { SiMysql, SiExpress, SiMongodb, SiJavascript, SiSelenium, SiReact, SiNodedotjs, SiHtml5, SiCss3 } from "react-icons/si";
 
 const MainPage = (props: Types.MainPageProps) => {
   const nav = useNavigate();
@@ -52,6 +52,9 @@ const MainPage = (props: Types.MainPageProps) => {
                     >
                       Details
                     </button>
+                    <a className="btn btn-primary" href={project.gitHubURL} target="_blank">
+                      Git Hub Repo
+                    </a>
                     <a className="btn btn-primary" href={project.appURL} target="_blank">
                       Project Site
                     </a>
@@ -108,6 +111,9 @@ const MainPage = (props: Types.MainPageProps) => {
                     >
                       Details
                     </button>
+                    <a className="btn btn-primary" href={project.gitHubURL} target="_blank">
+                      Git Hub Repo
+                    </a>
                     <a className="btn btn-primary" href={project.appURL} target="_blank">
                       Project Site
                     </a>

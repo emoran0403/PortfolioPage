@@ -5,21 +5,31 @@ import { IdleGameDetails } from "../../../ProjectInfo";
 
 const IdleGame = (props: Types.IdleGameProps) => {
   const nav = useNavigate();
-  // for the details pages, would i need anything beyond  Overview, Features, Challenges, and Tech Stack?
-  return (
-    <div className="my-4">
-      <h1 className="text-center">Idle Scape</h1>
-      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+  const buttonJSX = () => {
+    return (
       <div className="d-flex justify-content-center">
         <button
-          className="btn btn-primary btn-sm my-2"
+          className="btn btn-primary btn-sm m-2"
           onClick={() => {
             nav(`/`);
           }}
         >
           Main page
         </button>
+        <a className="btn btn-primary btn-sm m-2" href={IdleGameDetails.gitHubURL} target="_blank">
+          Git Hub Repo
+        </a>
+        <a className="btn btn-primary btn-sm m-2" href={IdleGameDetails.appURL} target="_blank">
+          Project Site
+        </a>
       </div>
+    );
+  };
+  return (
+    <div className="my-4">
+      <h1 className="text-center">IdleScape</h1>
+      <hr style={{ width: "50%", height: "5px", margin: "auto" }}></hr>
+      {buttonJSX()}
 
       <div className="d-flex justify-content-center">
         <div className="col-6">
@@ -27,7 +37,7 @@ const IdleGame = (props: Types.IdleGameProps) => {
             <div className="card-body">
               <h3 className="text-center">Overview</h3>
               <p>
-                Idle Scape is an idle / incremental game based on the MMORPG Runescape. The player tells the game what they want to do, and the game executes
+                IdleScape is an idle / incremental game based on the MMORPG Runescape. The player tells the game what they want to do, and the game executes
                 those actions on an interval. The player can choose to train skills, go on quests, or engage in combat with various enemies. Options vary for
                 each location the player may travel to.
               </p>

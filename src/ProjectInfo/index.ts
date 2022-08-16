@@ -9,6 +9,7 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   imgURI: "",
   pageURL: `/blogslab`,
   appURL: ``,
+  gitHubURL: "https://github.com/emoran0403/blogs-lab",
   lab: true,
   personalProject: false,
 };
@@ -21,16 +22,18 @@ export const GundamPlanetDetails = {
   imgURI: "",
   pageURL: `/gundamplanet`,
   appURL: ``,
+  gitHubURL: "https://github.com/emoran0403/Gundam-Getter",
   lab: false,
   personalProject: true,
 };
 export const IdleGameDetails = {
-  title: "Idle Scape",
-  details: `Idle Scape is a Full-Stack application and my final project for the Covalence bootcamp.`,
+  title: "IdleScape",
+  details: `IdleScape is a Full-Stack application and my final project for the Covalence bootcamp.`,
   techStack: [`MongoDB`, `Express`, `React`, `Redux`, `Typescript`, `NodeJS`],
   imgURI: "",
   pageURL: `/idlegame`,
   appURL: `https://ejmdev-idlescape.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Idle-Game",
   lab: false,
   personalProject: true,
 };
@@ -42,6 +45,7 @@ export const JustMyTypeDetails = {
   imgURI: "",
   pageURL: `/justmytype`,
   appURL: `https://eric-just-my-type.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Just-my-Type",
   lab: true,
   personalProject: false,
 };
@@ -49,10 +53,11 @@ export const StudioGhibliDetails = {
   title: "Studio Ghibli Lab",
   details: `The Studio Ghibli Lab is one of the first labs in the React section of the Covalence bootcamp.
     Students are tasked with making fetch requests to an API, then displaying the data.`,
-  techStack: [`JavaScript`, `Express`, `React`, `NodeJS`],
+  techStack: [`JavaScript`, `React`, `Create React App`],
   imgURI: "",
   pageURL: `/studioghibli`,
-  appURL: `https://eric-studio-ghibli-api.herokuapp.com/`,
+  appURL: `https://ejmdev-ghibli-getter.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Nicer-Ghibli-App",
   lab: true,
   personalProject: false,
 };
@@ -64,6 +69,7 @@ export const TicTacToeDetails = {
   imgURI: "",
   pageURL: `/tictactoe`,
   appURL: `https://ejmdev-tic-tac-toe.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Tic-Tac-Toe-Lab",
   lab: true,
   personalProject: false,
 };

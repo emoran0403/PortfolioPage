@@ -26,6 +26,8 @@ export interface ProjectDetails {
   imgURI: string;
   pageURL: string;
   appURL: string;
+  gitHubURL: string;
   lab: boolean;
+
   personalProject: boolean;
 }
