@@ -5,6 +5,7 @@ export interface TicTacToeProps {}
 export interface JustMyTypeProps {}
 export interface GundamPlanetProps {}
 export interface BlogsLabProps {}
+export interface ResumeProps {}
 
 export interface IFetchOptions {
   headers: IHeaderObject;
@@ -23,7 +24,6 @@ export interface ProjectDetails {
   title: string;
   details: string;
   techStack: string[];
-  imgURI: string;
   pageURL: string;
   appURL: string;
   gitHubURL: string;

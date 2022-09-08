@@ -9,6 +9,7 @@ import IdleGame from "./Pages/ProjectPages/IdleGame";
 import JustMyType from "./Pages/ProjectPages/JustMyType";
 import StudioGhibli from "./Pages/ProjectPages/StudioGhibli";
 import TicTacToe from "./Pages/ProjectPages/TicTacToe";
+import Resume from "./Pages/Resume";
 
 const App = (props: AppProps) => {
   // when the app loads, make a fetch request to each project to wake them up
@@ -24,7 +25,11 @@ const App = (props: AppProps) => {
     ];
 
     Promise.allSettled(projectArray)
-      .then((res) => Promise.allSettled(res.map((r) => (r.status === "fulfilled" ? r.value.json() : Promise.reject(`Bad response from ${r.reason}`)))))
+      .then((res) =>
+        Promise.allSettled(
+          res.map((r) => (r.status === "fulfilled" ? r.value.json() : Promise.reject(`Bad response from ${r.reason}`)))
+        )
+      )
       .then((results) => {
         const sitesFailed = results.filter((res) => res.status === "rejected");
         const sitesLoaded = results.filter((res) => res.status === "fulfilled");
@@ -44,6 +49,7 @@ const App = (props: AppProps) => {
         <Route path="/justmytype" element={<JustMyType />} />
         <Route path="/gundamplanet" element={<GundamPlanet />} />
         <Route path="/blogslab" element={<BlogsLab />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
   );

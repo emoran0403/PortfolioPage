@@ -35,7 +35,10 @@ const MainPage = (props: Types.MainPageProps) => {
 
                 <div className="card-body text-center">
                   {project.techStack.sort().map((tech) => (
-                    <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                    <span
+                      key={`tech-stack-item-${tech}`}
+                      className="mx-2 badge bg-light text-dark border border-1 border-dark"
+                    >
                       {tech}
                     </span>
                   ))}
@@ -95,7 +98,10 @@ const MainPage = (props: Types.MainPageProps) => {
                 <hr></hr>
                 <div className="card-body text-center">
                   {project.techStack.sort().map((tech) => (
-                    <span key={`tech-stack-item-${tech}`} className="mx-2 badge bg-light text-dark border border-1 border-dark">
+                    <span
+                      key={`tech-stack-item-${tech}`}
+                      className="mx-2 badge bg-light text-dark border border-1 border-dark"
+                    >
                       {tech}
                     </span>
                   ))}
@@ -128,11 +134,26 @@ const MainPage = (props: Types.MainPageProps) => {
       </div>
     );
   };
+  const resumeJSX = () => {
+    return (
+      <div>
+        <button
+          className="btn btn-primary col-2"
+          onClick={() => {
+            nav(`/resume`);
+          }}
+        >
+          Resume
+        </button>
+      </div>
+    );
+  };
   return (
-    <div>
+    <div className="d-flex">
       <div className="my-4">
         {projectsJSX()}
         {labsJSX()}
+        {resumeJSX()}
       </div>
     </div>
   );
