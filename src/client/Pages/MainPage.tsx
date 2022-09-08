@@ -134,26 +134,23 @@ const MainPage = (props: Types.MainPageProps) => {
       </div>
     );
   };
-  const resumeJSX = () => {
-    return (
-      <div>
-        <button
-          className="btn btn-primary col-2"
-          onClick={() => {
-            nav(`/resume`);
-          }}
-        >
-          Resume
-        </button>
-      </div>
-    );
-  };
   return (
-    <div className="d-flex">
-      <div className="my-4">
+    <div className="d-flex row flex-wrap">
+      <div className="my-4 col-11">
         {projectsJSX()}
         {labsJSX()}
-        {resumeJSX()}
+      </div>
+      <div className="d-flex justify-content-center">
+        <div>
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              nav(`/resume`);
+            }}
+          >
+            Resume
+          </button>
+        </div>
       </div>
     </div>
   );

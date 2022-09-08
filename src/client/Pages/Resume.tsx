@@ -19,7 +19,7 @@ const Resume = (props: Types.ResumeProps) => {
       </div>
       <iframe
         width="100%"
-        height="90%"
+        height="95%"
         src="https://docs.google.com/document/d/1CmYj4HI47qDIDJIAohi7Myr4HCO8QVp7uzxP_QeMLek/edit?usp=sharing"
       ></iframe>
     </div>
