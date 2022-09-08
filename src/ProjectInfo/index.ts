@@ -10,19 +10,17 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   appURL: ``,
   gitHubURL: "https://github.com/emoran0403/blogs-lab",
   lab: true,
-  personalProject: false,
 };
-export const GundamPlanetDetails = {
-  title: "Gundam Planet Scraper",
-  details: `Gundam Planet Scraper is a personal project I worked on after the bootcamp. 
+export const GundamGetterDetails = {
+  title: "Gundam Getter",
+  details: `Gundam Getter is a personal project I worked on after the bootcamp. 
   Using data from Google Sheets, the server launches a headless browser via Selenium to scrape data from select websites, 
   then writes that data back to a Google Sheet.`,
   techStack: [`Google Sheets API`, `Express`, `React`, `Typescript`, `NodeJS`, `Selenium`],
-  pageURL: `/gundamplanet`,
+  pageURL: `/gundamgetter`,
   appURL: ``,
   gitHubURL: "https://github.com/emoran0403/Gundam-Getter",
   lab: false,
-  personalProject: true,
 };
 export const IdleGameDetails = {
   title: "IdleScape",
@@ -32,7 +30,6 @@ export const IdleGameDetails = {
   appURL: `https://ejmdev-idlescape.herokuapp.com/`,
   gitHubURL: "https://github.com/emoran0403/Idle-Game",
   lab: false,
-  personalProject: true,
 };
 export const JustMyTypeDetails = {
   title: "Just My Type Lab",
@@ -43,7 +40,6 @@ export const JustMyTypeDetails = {
   appURL: `https://eric-just-my-type.herokuapp.com/`,
   gitHubURL: "https://github.com/emoran0403/Just-my-Type",
   lab: true,
-  personalProject: false,
 };
 export const StudioGhibliDetails = {
   title: "Studio Ghibli Lab",
@@ -54,7 +50,6 @@ export const StudioGhibliDetails = {
   appURL: `https://ejmdev-ghibli-getter.herokuapp.com/`,
   gitHubURL: "https://github.com/emoran0403/Nicer-Ghibli-App",
   lab: true,
-  personalProject: false,
 };
 export const TicTacToeDetails = {
   title: "Tic Tac Toe Lab",
@@ -65,13 +60,12 @@ export const TicTacToeDetails = {
   appURL: `https://ejmdev-tic-tac-toe.herokuapp.com/`,
   gitHubURL: "https://github.com/emoran0403/Tic-Tac-Toe-Lab",
   lab: true,
-  personalProject: false,
 };
 export const ProjectArray: Types.ProjectDetails[] = [
   IdleGameDetails,
   BlogsLabDetails,
   StudioGhibliDetails,
-  GundamPlanetDetails,
+  GundamGetterDetails,
   JustMyTypeDetails,
   TicTacToeDetails,
 ];

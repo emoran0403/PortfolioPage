@@ -21,4 +21,8 @@ $theme-colors: (
   // add any additional color below
 );
 
+html {
+  overflow: scroll;
+}
+
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

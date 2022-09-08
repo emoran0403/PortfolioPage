@@ -3,9 +3,10 @@ export interface IdleGameProps {}
 export interface StudioGhibliProps {}
 export interface TicTacToeProps {}
 export interface JustMyTypeProps {}
-export interface GundamPlanetProps {}
+export interface GundamGetterProps {}
 export interface BlogsLabProps {}
 export interface ResumeProps {}
+export interface NavbarProps {}
 
 export interface IFetchOptions {
   headers: IHeaderObject;
@@ -28,6 +29,9 @@ export interface ProjectDetails {
   appURL: string;
   gitHubURL: string;
   lab: boolean;
+}
 
-  personalProject: boolean;
+export interface ProjectLinksProps {
+  appURL: string;
+  gitHubURL: string;
 }

@@ -17,7 +17,7 @@ const clientPaths = [
   "/studioghibli",
   "/tictactoe",
   "/justmytype",
-  "/gundamplanet",
+  "/gundamgetter",
   "/blogslab",
   "/resume",
 ];
