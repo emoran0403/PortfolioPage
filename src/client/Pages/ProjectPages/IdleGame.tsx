@@ -27,9 +27,12 @@ const IdleGame = (props: Types.IdleGameProps) => {
             <div className="card-body">
               <h3 className="text-center">Features</h3>
               <p>Auth process ensures no duplicate emails or player usernames.</p>
-              <p>Game actions send a chat message to the chat window component.</p>
-              <p>The game state is managed with Redux, and evey update to state writes to localStorage.</p>
+              <p>
+                Game actions send a chat message to the chat window component, with an option to toggle chat filters.
+              </p>
+              <p>The game state is managed with Redux, and every state update writes to localStorage.</p>
               <p>Every 5 minutes, the player's data is updated on the Mongo database.</p>
+              <p>The changelog is displayed in the lobby, keeping players up to date on recent changes and fixes.</p>
             </div>
             <hr></hr>
 
@@ -47,6 +50,13 @@ const IdleGame = (props: Types.IdleGameProps) => {
                 familiarize myself with Redux, I built a small app to update multiple slices of state in different ways
                 to mimic the functionality of the final project with a much simpler implementation. Once the small app
                 was complete, I expanded upon it as a framework and added in new features and functionality.
+              </p>
+              <p>
+                I wanted to make Idlescape as close to Runescape as I could, which meant using large amounts of varied
+                data available on their wiki. I did not want to copy and paste everything manually, so I made some web
+                scraping utility tools. My bookmarklets scraped a wiki page for the data I was looking for, such as
+                quest data, monster information, etc., and logged it to the console in the form of an object. This
+                vastly reduced the workload and simplified the workflow.
               </p>
             </div>
             <hr></hr>
