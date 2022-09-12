@@ -35,7 +35,7 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
               <p>A headless Selenium Firefox browser to scrape web data.</p>
               <p>
                 If the release date cannot be found on the page, a link to the page is written to the Google Sheet for
-                manual verification
+                manual verification.
               </p>
             </div>
             <hr></hr>
