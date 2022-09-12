@@ -1,5 +1,24 @@
 import * as Types from "../../Types";
 
+export const IdleGameDetails = {
+  title: "IdleScape",
+  details: `IdleScape is a Full-Stack application and my final project for the Covalence bootcamp.`,
+  techStack: [`MongoDB`, `Express`, `React`, `Redux`, `Typescript`, `NodeJS`],
+  pageURL: `/idlegame`,
+  appURL: `https://ejmdev-idlescape.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Idle-Game",
+  lab: false,
+};
+export const GundamGetterDetails = {
+  title: "Gundam Getter",
+  details: `Gundam Getter is a personal project I worked on after the bootcamp for a friend at Gundam Planet who wanted to keep track of model kit release dates.
+  `,
+  techStack: [`Google Sheets API`, `Express`, `React`, `Typescript`, `NodeJS`, `Selenium`],
+  pageURL: `/gundamgetter`,
+  appURL: ``,
+  gitHubURL: "https://github.com/emoran0403/Gundam-Getter",
+  lab: false,
+};
 export const BlogsLabDetails: Types.ProjectDetails = {
   title: "Blogs Lab",
   details: `Blogs Lab is a Full Stack application from the Covalence bootcamp.  
@@ -11,25 +30,15 @@ export const BlogsLabDetails: Types.ProjectDetails = {
   gitHubURL: "https://github.com/emoran0403/blogs-lab",
   lab: true,
 };
-export const GundamGetterDetails = {
-  title: "Gundam Getter",
-  details: `Gundam Getter is a personal project I worked on after the bootcamp. 
-  Using data from Google Sheets, the server launches a headless browser via Selenium to scrape data from select websites, 
-  then writes that data back to a Google Sheet.`,
-  techStack: [`Google Sheets API`, `Express`, `React`, `Typescript`, `NodeJS`, `Selenium`],
-  pageURL: `/gundamgetter`,
-  appURL: ``,
-  gitHubURL: "https://github.com/emoran0403/Gundam-Getter",
-  lab: false,
-};
-export const IdleGameDetails = {
-  title: "IdleScape",
-  details: `IdleScape is a Full-Stack application and my final project for the Covalence bootcamp.`,
-  techStack: [`MongoDB`, `Express`, `React`, `Redux`, `Typescript`, `NodeJS`],
-  pageURL: `/idlegame`,
-  appURL: `https://ejmdev-idlescape.herokuapp.com/`,
-  gitHubURL: "https://github.com/emoran0403/Idle-Game",
-  lab: false,
+export const StudioGhibliDetails = {
+  title: "Studio Ghibli Lab",
+  details: `The Studio Ghibli Lab is one of the first labs in the React section of the Covalence bootcamp.
+    Students are tasked with making fetch requests to an API, then displaying the data.`,
+  techStack: [`JavaScript`, `React`, `Create React App`],
+  pageURL: `/studioghibli`,
+  appURL: `https://ejmdev-ghibli-getter.herokuapp.com/`,
+  gitHubURL: "https://github.com/emoran0403/Nicer-Ghibli-App",
+  lab: true,
 };
 export const JustMyTypeDetails = {
   title: "Just My Type Lab",
@@ -39,16 +48,6 @@ export const JustMyTypeDetails = {
   pageURL: `/justmytype`,
   appURL: `https://eric-just-my-type.herokuapp.com/`,
   gitHubURL: "https://github.com/emoran0403/Just-my-Type",
-  lab: true,
-};
-export const StudioGhibliDetails = {
-  title: "Studio Ghibli Lab",
-  details: `The Studio Ghibli Lab is one of the first labs in the React section of the Covalence bootcamp.
-    Students are tasked with making fetch requests to an API, then displaying the data.`,
-  techStack: [`JavaScript`, `React`, `Create React App`],
-  pageURL: `/studioghibli`,
-  appURL: `https://ejmdev-ghibli-getter.herokuapp.com/`,
-  gitHubURL: "https://github.com/emoran0403/Nicer-Ghibli-App",
   lab: true,
 };
 export const TicTacToeDetails = {
@@ -63,9 +62,9 @@ export const TicTacToeDetails = {
 };
 export const ProjectArray: Types.ProjectDetails[] = [
   IdleGameDetails,
+  GundamGetterDetails,
   BlogsLabDetails,
   StudioGhibliDetails,
-  GundamGetterDetails,
   JustMyTypeDetails,
   TicTacToeDetails,
 ];

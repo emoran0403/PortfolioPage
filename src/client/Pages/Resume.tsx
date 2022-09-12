@@ -10,7 +10,7 @@ const Resume = (props: Types.ResumeProps) => {
       <iframe
         width="100%"
         height="93%"
-        src="https://docs.google.com/document/d/1CmYj4HI47qDIDJIAohi7Myr4HCO8QVp7uzxP_QeMLek/edit?usp=sharing"
+        src="https://docs.google.com/document/d/1F7eCqSJMzCzhs6Mq0qkMqSwNJtV2fMwwedde925l4sU/edit?usp=sharing"
       ></iframe>
     </div>
   );

@@ -21,7 +21,7 @@ const Navbar = (props: Types.NavbarProps) => {
         </button>
       </div>
       {pageURLs.map((link) => (
-        <div className="col-1 d-flex justify-content-center align-items-center">
+        <div key={link.title} className="col-1 d-flex justify-content-center align-items-center">
           <Link to={link.URL} className={`btn w-100 mx-1 btn-${loc.pathname != link.URL ? "primary" : "warning"}`}>
             {link.title}
           </Link>

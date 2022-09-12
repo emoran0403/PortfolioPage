@@ -25,18 +25,19 @@ const TicTacToe = (props: Types.TicTacToeProps) => {
             <hr></hr>
             <div className="card-body">
               <h3>Features</h3>
-              <p>text here</p>
+              <p>1 function checks the entire board for a winning condition after every turn.</p>
+              <p>The game resets the board after a win or draw.</p>
             </div>
             <hr></hr>
 
             <div className="card-body">
               <h3>Challenges</h3>
               <p>
-                This was one of the first labs in the course that brought together the concepts taught in HTML, CSS, and
-                JS, with a healthy dose of "If you don't know it, google it". One of the small things not explicitly
-                covered (and the most difficult part about this lab) was adding the defer attribute to the script tag in
-                the html file to ensure the DOM tree loaded before the script attempted to add the event listeners.
-                Turns out I could have just put the script tag at the end of the body as well.
+                This was one of the first labs in the course that brought together the concepts taught in the HTML, CSS,
+                and JS sections, with a healthy dose of "If you don't know it, google it". One of the small things not
+                explicitly covered (and the most difficult part about this lab) was adding the defer attribute to the
+                script tag in the html file to ensure the DOM tree loaded before the script attempted to add the event
+                listeners. Turns out I could have just put the script tag at the end of the body as well.
               </p>
             </div>
             <hr></hr>
