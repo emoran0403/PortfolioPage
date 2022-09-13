@@ -31,7 +31,9 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
             <hr></hr>
             <div className="card-body">
               <h3>Features</h3>
-              <p>Google OAuth2 to authorize and authenticate read and write requests to the Google Sheet.</p>
+              <p>
+                Utilizes Google Sheets API to authorize and authenticate read and write requests to the Google Sheet.
+              </p>
               <p>A headless Selenium Firefox browser to scrape web data.</p>
               <p>
                 If the release date cannot be found on the page, a link to the page is written to the Google Sheet for
@@ -49,7 +51,7 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
                 Document.get("ExactlyWhatIAmLookingFor").
               </p>
               <p>
-                Google OAuth2 and their documentation was the most challenging part of this project. I felt like I was
+                Google APIs and their documentation was the most challenging part of this project. I felt like I was
                 playing whack-a-mole with the debugging process: something would come up, I would check the docs to fix
                 it, something new would come up that the first docs didn't warn about, and I would have to check the
                 docs again.
@@ -60,7 +62,11 @@ const GundamGetter = (props: Types.GundamGetterProps) => {
                 deployment. The build process on Heroku ran out of available memory and would not build - I had to
                 convert it to a NextJS app to address this. Selenium required an older Heroku stack to run on. Firefox's
                 binaries for Selenium had to be added to the project files itself since it wouldn't be running from my
-                machine. Google OAuth2 required a few additional steps the docs didn't really warn about.
+                machine. Google APIs required a few additional steps the docs didn't really warn about.
+              </p>
+              <p>
+                In the end I decided to not deploy Gundam Getter, and instead teach my friend how to download the code
+                from github and run the project locally.
               </p>
             </div>
             <hr></hr>

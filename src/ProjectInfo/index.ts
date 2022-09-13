@@ -36,7 +36,7 @@ export const StudioGhibliDetails = {
     Students are tasked with making fetch requests to an API, then displaying the data.`,
   techStack: [`JavaScript`, `React`, `Create React App`],
   pageURL: `/studioghibli`,
-  appURL: `https://ejmdev-ghibli-getter.herokuapp.com/`,
+  appURL: `https://emoran0403.github.io/Nicer-Ghibli-App/#/`,
   gitHubURL: "https://github.com/emoran0403/Nicer-Ghibli-App",
   lab: true,
 };
@@ -46,7 +46,7 @@ export const JustMyTypeDetails = {
     Students are tasked with writing the logic to create a typing game.`,
   techStack: [`HTML`, `JavaScript`, `CSS`],
   pageURL: `/justmytype`,
-  appURL: `https://eric-just-my-type.herokuapp.com/`,
+  appURL: `https://emoran0403.github.io/Just-my-Type/`,
   gitHubURL: "https://github.com/emoran0403/Just-my-Type",
   lab: true,
 };
@@ -56,7 +56,7 @@ export const TicTacToeDetails = {
   Students are tasked with coding a functional game using Javascript, HTML and CSS.`,
   techStack: [`HTML`, `JavaScript`, `CSS`],
   pageURL: `/tictactoe`,
-  appURL: `https://ejmdev-tic-tac-toe.herokuapp.com/`,
+  appURL: `https://emoran0403.github.io/Tic-Tac-Toe-Lab/`,
   gitHubURL: "https://github.com/emoran0403/Tic-Tac-Toe-Lab",
   lab: true,
 };
